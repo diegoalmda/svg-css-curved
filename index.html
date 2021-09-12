@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG curves</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+<body>
+  <section class="blue">
+    <h1>Nice curves</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero omnis commodi iure, quisquam ipsum fuga debitis, repudiandae quaerat maiores cumque? Fugit voluptatum porro quae dolores. Vel exercitationem dicta eos!</p>
+    <div class="curve"></div>
+  </section>
+  <section>
+    <h1>Nice curves</h1>
+    <p>Molestiae, ad facere fugit adipisci quos laudantium! Vero cumque eligendi nihil atque cum voluptatibus, corporis, minus temporibus unde ullam velit fugit ab perferendis aliquam, architecto voluptatem ad. Maiores, eaque ipsum?</p>
+  </section>
+  <section class="bubble">
+    <h1>Nice curves</h1>
+    <p>Rem laboriosam sequi, tempore suscipit veniam voluptates porro ducimus accusantium nisi ex autem unde consequuntur expedita dolor dolorum quo quas quibusdam adipisci aut nemo ullam deleniti non? Aliquam, iusto laborum.</p>
+  </section>
+  <section class="dark">
+    <h1>Nice curves</h1>
+    <p>Rerum odio architecto ratione minima quae quisquam, necessitatibus eligendi voluptates mollitia. Itaque earum neque repellendus fugit nam quam architecto quisquam porro omnis ab suscipit cupiditate quas, ipsa eius ad autem.</p>
+  </section>
+  <section class="red">
+    <h1>Nice curves</h1>
+    <p>Asperiores minus, quibusdam id, labore iste praesentium fuga tenetur libero ratione enim reiciendis voluptatibus ad illo inventore nemo modi officia officiis iusto soluta debitis quaerat temporibus unde est? Deleniti, repellat?</p>
+    <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <div class="spacer layer1"></div>
+
+  <section class="dark1">
+    <h1>Nice curves</h1>
+    <p>Aperiam deserunt velit numquam, enim est quae officiis ipsam ut voluptatum, quod fuga ab. Molestiae delectus dolorem blanditiis magni saepe optio. A, quasi at. Libero reprehenderit ex neque culpa vero!</p>
+  </section>
+
+  <div class="spacer layer2 flip"></div>
+  <section class="pink">
+    <h1>Nice curves</h1>
+    <p>Esse cupiditate a explicabo delectus ratione! Fugit deleniti nihil illo facilis incidunt amet illum optio earum, ut ipsam quibusdam impedit doloribus expedita unde ipsum placeat dolorum hic nemo omnis nesciunt.</p>
+    <svg id="visual" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(492.3264532884303 165.67845445067707)"><path id="blob1" d="M78.4 -83.4C95.6 -61.3 99.3 -30.6 100 0.7C100.7 32.1 98.4 64.1 81.3 78.1C64.1 92.1 32.1 88.1 7.2 80.9C-17.7 73.7 -35.4 63.4 -60.4 49.4C-85.4 35.4 -117.7 17.7 -123.7 -6C-129.7 -29.7 -109.4 -59.4 -84.4 -81.6C-59.4 -103.7 -29.7 -118.4 0.5 -118.8C30.6 -119.3 61.3 -105.6 78.4 -83.4" fill="#BB004B"></path></g><g transform="translate(470.52398397449275 140.3776661130788)" style="visibility: hidden"><path id="blob2" d="M64.5 -53C88.5 -40.5 116.3 -20.3 122.8 6.5C129.2 33.2 114.5 66.5 90.5 84C66.5 101.5 33.2 103.2 -1.1 104.3C-35.4 105.4 -70.7 105.7 -88.4 88.2C-106 70.7 -106 35.4 -105 1.1C-103.9 -33.2 -101.8 -66.5 -84.1 -79C-66.5 -91.5 -33.2 -83.2 -6.5 -76.8C20.3 -70.3 40.5 -65.5 64.5 -53" fill="#BB004B"></path></g></svg>
+
+    <script>
+      const tween = KUTE.fromTo(
+        '#blob1',
+        { path: '#blob1' },
+        { path: '#blob2' },
+        { repeat: 999, duration: 3000, yoyo: true }
+      )
+
+      tween.start()
+    </script>
+  </section>
+  <div class="spacer layer2"></div>
+
+  <section>
+    <h1>Nice curves</h1>
+    <p>Voluptate odio atque provident sed necessitatibus exercitationem reprehenderit nihil consectetur rerum laudantium labore maiores fugiat beatae inventore blanditiis eveniet, cum eos commodi nulla ab! Pariatur aliquid nemo excepturi saepe similique.</p>
+  </section>
+</body>
+</html>
